@@ -4,7 +4,6 @@ const fs = require('fs')
 module.exports.hello = async event => {
   const dircontents = fs.readdirSync('/opt')
   console.log(dircontents)
-
   return {
     statusCode: 200,
     body: JSON.stringify(
